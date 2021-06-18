@@ -3,6 +3,7 @@ import React from 'react';
 
 // Font Awesome Imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCloudSunRain} 	 from "@fortawesome/pro-duotone-svg-icons";
 
 import './Brand.scss';
 const Brand = () => { 'use strict';
@@ -12,7 +13,12 @@ const Brand = () => { 'use strict';
 	return (
 		<div className="brand">
 			<div>
-				<h1 className="brandName">{brandInfo.title}</h1>
+				<FontAwesomeIcon icon={faCloudSunRain} className="sunIcon" title={brandInfo.title} />
+			</div>
+			<div>
+				<h1 className="brandName">
+					{brandInfo.title}
+				</h1>
 			</div>
 		</div>
 

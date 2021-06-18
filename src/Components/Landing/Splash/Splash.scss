@@ -1,33 +1,5 @@
-body {
-  background-color: #FFF;
-  font-family: "Amatic SC", sans-serif;
-}
-
-.header {
-  margin-left: 10rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.checkbox {
-  position: absolute;
-}
-
-.checkbox:checked ~ .navigation {
-  left: 0;
-}
-
-.checkbox:checked ~ .navbar .sidebar #hLabel .line-1 {
-  transform: rotate(-405deg) translate(-11px, 12px);
-  width: 2.5rem;
-}
-
-.checkbox:checked ~ .navbar .sidebar #hLabel .line-2 {
-  opacity: 0;
-}
-
-.checkbox:checked ~ .navbar .sidebar #hLabel .line-3 {
-  transform: rotate(405deg);
-  width: 2.5rem;
+.sunIcon {
+  font-size: 4rem;
+  color: white;
+  margin-right: 10px;
 }

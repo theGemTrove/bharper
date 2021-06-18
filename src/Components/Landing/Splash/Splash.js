@@ -1,52 +1,35 @@
 import React from 'react';
 
 import Brand from "./features/Brand/Brand";
-
+// Font Awesome Imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCloudSunRain} 	 from "@fortawesome/pro-duotone-svg-icons";
 import './Splash.scss';
 const Splash = () => {
 	return (
 		<div id="pageContainer">
-			<header className="header">
-				<Brand />
-				<h2 className="brand">Hey There, the name's Branden</h2>
-				<div>
-					<h3>Experience</h3>
-					<ul>
-						<li>20 years SysAdmin and Security Experience</li>
-						<li>15 years of Telecom Experience</li>
-						<li>10 years of development Experience</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Services</h3>
-					<ul>
-						<li>
-							IT/System Administration & Networking
-							<ul>
-								<li>Setting up new application environments</li>
-								<li>Securing Systems & Networks</li>
-								<li>Security Scanning</li>
-								<li>Private Network (VLAN) Connectivity</li>
-								<li>Routing</li>
-								<li>AWS/S3 Experience</li>
-							</ul>
-						</li>
-						<li>
-							Telephony
-							<ul>
-								<li>Building and maintaining PBX</li>
-								<li>Carrier/TSP Interconnectivity</li>
-								<li>Troubleshooting</li>
-								<li>Application Development</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Request Services</h3>
-					<p>Branden Harper - bharper@sd0c.com</p>
-				</div>
-
+			<header>
+				<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+					<FontAwesomeIcon icon={faCloudSunRain} className="sunIcon" />
+					<a className="navbar-brand" href="#">Sol Data Consulting</a>
+					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+									aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span className="navbar-toggler-icon"></span>
+					</button>
+					<div className="collapse navbar-collapse" id="navbarCollapse">
+						<ul className="navbar-nav mr-auto">
+							<li className="nav-item active">
+								<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">Contact</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link disabled" href="#">Disabled</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</header>
 		</div>
 	);
